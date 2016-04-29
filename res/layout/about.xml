@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+
+		<LinearLayout
+			android:id="@id/layout_adView"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center"/>
+
+	</ScrollView>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="程序名：XL地图编辑器"
+		android:layout_width="wrap_content"
+		android:textSize="18sp"/>
+
+	<TextView
+		android:id="@+id/about_version"
+		android:layout_height="wrap_content"
+		android:text="版本：1.4"
+		android:layout_width="wrap_content"
+		android:textSize="16sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="作者：风的影子"
+		android:layout_width="wrap_content"
+		android:textSize="16sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="打造手机上最好用的地图编辑器！"
+		android:layout_width="wrap_content"
+		android:textSize="18sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="欢迎加入我们："
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:textSize="18sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="手机游戏开发交流群：496717720"
+		android:layout_width="wrap_content"
+		android:textSize="18sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="版权声明：本程序部分代码来自开源地图编辑器，最终解释权归作者所有。"
+		android:layout_width="wrap_content"/>
+
+</LinearLayout>
+

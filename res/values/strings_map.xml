@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">风的影子 作品</string>
+    <string name="app_name">XL地图编辑器</string>
+	
+	<string name="open_image">打开图片</string>
+	<string name="map_setting">地图设置</string>
+	<string name="map_reset">地图重置</string>
+	<string name="image_size">图片大小</string>
+	<string name="app_exit">程序退出</string>
+	<string name="game_example">游戏示例</string>
+	<string name="about_help">关于帮助</string>
+	<string name="app_list">应用推荐</string>
+	<string name="land">横屏</string>
+  <string name="port">竖屏</string>
+	
+	<string name="white">白色</string>
+	<string name="black">黑色</string>
+	<string name="help">帮助</string>
+	<string name="about">关于</string>
+	
+	<string name="helptext">  本程序主要用于编辑tmx格式地图。  \n编辑地图前，需要新建地图，然后为地图添加图块(具体位置：工具栏：地图>新图块)\n  删除操作：\n  工具栏：编辑>删除\n  双指快速编辑：  \n左手按住地图，右手绘制图块</string>
+</resources>

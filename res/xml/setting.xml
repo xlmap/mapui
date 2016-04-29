@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ <EditTextPreference 
+		android:key="blackSize" 
+		android:title="默认图块大小" 
+		android:summary="设置编辑器默认图块大小" 
+		android:defaultValue="64" 
+		android:dialogTitle="输入"> 
+	</EditTextPreference>
+	<EditTextPreference
+	android:key="filePath" 
+	android:title="默认文件路径" 
+	android:summary="设置文件默认路径" 
+	android:defaultValue="MyTile" 
+	android:dialogTitle="输入"> 
+	</EditTextPreference>
+	
+	
+	<CheckBoxPreference
+		android:enabled="true"
+		android:defaultValue="true"
+		android:title="记住最后打开的文件"
+		android:key="isSaveLastFile" 
+		android:summary="当编辑器启动时，自动打开没有关闭的文件" />
+
+	<CheckBoxPreference
+		android:enabled="true"
+		android:defaultValue="false"
+		android:title="图标模式"
+		android:key="imgbutton" 
+		android:summary="编辑器采用图标显示" />
+	
+	
+	
+	<ListPreference 
+		android:entries="@array/screen_list"
+		android:title="屏幕方向" 
+		android:key="screen"
+		android:summary="设置屏幕显示方向" 
+		android:defaultValue="@string/land" 
+
+		android:entryValues="@array/screen_list"
+	/>
+	<ListPreference 
+		android:entries="@array/theme_list"
+		android:title="主题皮肤" 
+		android:key="theme"
+		android:summary="" 
+		android:defaultValue="@string/white" 
+
+		android:entryValues="@array/theme_list"
+	/>
+
+</PreferenceScreen>
+
+

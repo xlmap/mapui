@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="地图文件名"
+			android:layout_width="wrap_content"/>
+
+		<EditText
+			android:id="@+id/newmapEditText"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:layout_width="match_parent"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="地图宽度"
+				android:layout_width="wrap_content"/>
+
+			<com.map.view.NumEdit
+				android:id="@id/mapWidth"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="地图高度"
+				android:layout_width="wrap_content"/>
+
+			<com.map.view.NumEdit
+				android:id="@id/mapHeight"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="图块宽度"
+				android:layout_width="wrap_content"/>
+
+			<com.map.view.NumEdit
+				android:id="@id/blockWidth"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1.0">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="图块高度"
+				android:layout_width="wrap_content"/>
+
+			<com.map.view.NumEdit
+				android:id="@id/blockHeight"
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

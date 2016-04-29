@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<string-array name="screen_list">
+		<item>@string/port</item>
+		<item>@string/land</item>
+		
+	</string-array>
+	<string-array name="theme_list">
+		<item>@string/white</item>
+		<item>@string/black</item>
+
+	</string-array>
+	
+	
+</resources>
+
+

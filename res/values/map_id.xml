@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<item type="id" name="blockWidth"></item>
+	<item type="id" name="blockHeight"></item>
+	<item type="id" name="mapWidth"></item>
+	<item type="id" name="mapHeight"></item>
+	
+	
+</resources>

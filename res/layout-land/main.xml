@@ -13,7 +13,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:orientation="vertical"
-		android:layout_weight="2">
+		android:layout_weight="1.0">
 
 		<HorizontalScrollView
 			android:layout_height="wrap_content"
@@ -30,8 +30,6 @@
 					android:src="@drawable/title"
 					android:minWidth="42dp"
 					android:minHeight="42dp"
-					android:maxWidth="50dp"
-					android:maxHeight="50dp"
 					android:scaleType="centerCrop"
 					android:padding="2dp"/>
 
@@ -111,30 +109,36 @@
 			android:layout_height="1.8dp"/>
 
 		<LinearLayout
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:orientation="vertical"
-			android:id="@id/layout_adView"
-			android:gravity="center"/>
-
-		<LinearLayout
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
 			android:orientation="horizontal"
 			android:layout_weight="10">
+
+			<GridView
+				android:id="@+id/gridView"
+				android:horizontalSpacing="5dp"
+				android:numColumns="2"
+				android:stretchMode="columnWidth"
+				android:layout_height="match_parent"
+				android:layout_width="80dp"/>
 
 			<LinearLayout
 				android:layout_height="match_parent"
 				android:layout_width="match_parent"
 				android:orientation="vertical"
 				android:layout_weight="2">
-
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="vertical"
+					android:id="@id/layout_adView"
+					android:gravity="center"/>
 				<com.map.view.MapView
 					android:id="@+id/view_map"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
-					android:layout_weight="1.0"
-					android:background="#5C5C5C"/>
+					android:background="#5C5C5C"
+					android:layout_weight="1.0"/>
 
 				<SeekBar
 					android:id="@+id/horSeekBar"
@@ -153,16 +157,6 @@
 		</LinearLayout>
 
 	</LinearLayout>
-
-	<GridView
-		android:id="@+id/gridView"
-		android:numColumns="8"
-		android:horizontalSpacing="5dp"
-		android:stretchMode="columnWidth"
-		android:layout_weight="12"
-		android:layout_height="match_parent"
-		android:layout_width="match_parent"
-		android:clipChildren="true"/>
 
 </LinearLayout>
 

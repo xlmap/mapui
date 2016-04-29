@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	<item
+        android:id="@+id/open_image"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/open_image"/>
+	<item
+        android:id="@+id/map_setting"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/map_setting"/>
+	<item
+        android:id="@+id/map_reset"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/map_reset"/>
+	<item
+        android:id="@+id/image_size"
+        android:orderInCategory="400"
+        android:showAsAction="never"
+        android:title="@string/image_size"/>
+	<item
+        android:id="@+id/app_exit"
+        android:orderInCategory="500"
+        android:showAsAction="never"
+        android:title="@string/app_exit"/>
+    
+</menu>
