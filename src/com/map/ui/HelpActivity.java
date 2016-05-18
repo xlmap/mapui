@@ -1,18 +1,19 @@
 package com.map.ui;
 import android.app.*;
 import android.os.*;
-import com.baidu.appx.BDBannerAd;
-import com.baidu.appx.BDBannerAd.BannerAdListener;
+//import com.baidu.appx.BDBannerAd;
+//import com.baidu.appx.BDBannerAd.BannerAdListener;
 //import android.view.*;
 //import android.util.*;
 import android.widget.*;
 import com.xl.game.tool.*;
 import android.view.ViewGroup;
+import com.map.ui.adv.BanView;
 
 public class HelpActivity extends Activity
 {
 	private static String TAG = "AppX_BannerAd";
-	BDBannerAd bannerAdView;
+	BanView bannerAdView;
 
 	public void addAdView(ViewGroup layout)
 	{
@@ -22,13 +23,13 @@ public class HelpActivity extends Activity
 		// 此处ApiKey和推广位ID均是测试用的
 		// 您在正式提交应用的时候，请确认代码中已经更换为您应用对应的Key和ID
 		// 具体获取方法请查阅《百度开发者中心交叉换量产品介绍.pdf》
-		bannerAdView = new BDBannerAd(this, "lE8Daaqs6PuTmXbzhVncafWan2q5Pw1l",
-																	"g6cIazBYxBfFt6Obl2fEZvVd");
+		bannerAdView = new BanView(this);
 
 		// 设置横幅广告展示尺寸，如不设置，默认为SIZE_FLEXIBLE;
-		bannerAdView.setAdSize(BDBannerAd.SIZE_320X50);
+		//bannerAdView.setAdSize(BDBannerAd.SIZE_320X50);
 
 		// 设置横幅广告行为监听器
+		/*
 		bannerAdView.setAdListener(new BannerAdListener() {
 
 				@Override
@@ -56,7 +57,7 @@ public class HelpActivity extends Activity
 					Log.e(TAG, "leave app");
 				}
 			});
-
+*/
 		// 创建广告容器
 		//appxBannerContainer = (RelativeLayout) findViewById(R.id.appx_banner_container);
 

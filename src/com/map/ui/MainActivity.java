@@ -17,8 +17,8 @@ import com.map.*;
 import com.map.view.*;
 import java.io.*;
 import java.util.*;
-import com.baidu.appx.BDInterstitialAd;
-import com.baidu.appx.BDInterstitialAd;
+//import com.baidu.appx.BDInterstitialAd;
+//import com.baidu.appx.BDInterstitialAd;
 
 import android.view.View.OnClickListener;
 import java.lang.Process;
@@ -28,11 +28,13 @@ import com.xl.filelist.FileListDialog;
 import com.map.tool.*;
 import com.pgyersdk.feedback.*;
 import com.pgyersdk.update.*;
-import com.baidu.appx.BDBannerAd;
-import com.baidu.appx.BDBannerAd.BannerAdListener;
+//import com.baidu.appx.BDBannerAd;
+//import com.baidu.appx.BDBannerAd.BannerAdListener;
 import android.view.*;
 import android.util.*;
 import android.widget.*;
+import com.map.ui.adv.BanView;
+import com.map.ui.adv.AdvMan;
 
 
 /*
@@ -81,6 +83,11 @@ public class MainActivity extends Activity {
 	String SDCard="mnt/sdcard/";
 	String filename="1.tmx";
 	
+		public static final String key="76cee624bd0d9c5429c13decec4d35c4",
+	hannel="baidu";
+	
+	
+	
 	//地图完整路径
 	String mapfilename;
 
@@ -123,7 +130,9 @@ public class MainActivity extends Activity {
 			setRequestedOrientation(application.orientation);
 		//全屏显示
 		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
-        
+		//初始化广告
+		
+        AdvMan.getInstance(this,key,hannel);
 		
 				
 			
@@ -1193,7 +1202,7 @@ Toast.makeText(this,filepath,0).show();
 	
 	
 	private static String TAG = "AppX_BannerAd";
-	BDBannerAd bannerAdView;
+	BanView bannerAdView;
 
 	public void addAdView(ViewGroup layout)
 	{
@@ -1203,13 +1212,13 @@ Toast.makeText(this,filepath,0).show();
 		// 此处ApiKey和推广位ID均是测试用的
 		// 您在正式提交应用的时候，请确认代码中已经更换为您应用对应的Key和ID
 		// 具体获取方法请查阅《百度开发者中心交叉换量产品介绍.pdf》
-		bannerAdView = new BDBannerAd(this, "lE8Daaqs6PuTmXbzhVncafWan2q5Pw1l",
-																	"g6cIazBYxBfFt6Obl2fEZvVd");
+		bannerAdView = new BanView(this);
 
 		// 设置横幅广告展示尺寸，如不设置，默认为SIZE_FLEXIBLE;
-		bannerAdView.setAdSize(BDBannerAd.SIZE_320X50);
+		//bannerAdView.setAdSize(BDBannerAd.SIZE_320X50);
 
 		// 设置横幅广告行为监听器
+		/*
 		bannerAdView.setAdListener(new BannerAdListener() {
 
 				@Override
@@ -1237,7 +1246,7 @@ Toast.makeText(this,filepath,0).show();
 					Log.e(TAG, "leave app");
 				}
 			});
-
+*/
 		// 创建广告容器
 		//appxBannerContainer = (RelativeLayout) findViewById(R.id.appx_banner_container);
 

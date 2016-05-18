@@ -28,6 +28,7 @@
         </activity>
 				
 		<!--百度sdk -->
+			<!--
 			<activity android:name="com.baidu.appx.ui.BDInnerBrowser" />
 			<receiver android:name="com.baidu.appx.app_download.CompleteReceiver">
 				<intent-filter>
@@ -40,16 +41,53 @@
 				</intent-filter>
 				
 			</receiver>
+			-->
 			
 			
+			<!--
+			优聚广告
+			-->
+			<!-- 广告条 -->
+			<activity
+				android:name="com.map.ui.adv.AdvActivity"
+				android:configChanges="orientation|screenSize|keyboardHidden"
+				android:excludeFromRecents="true"
+				android:exported="true">
+			</activity>
+			<service android:name="com.map.ui.adv.AdvService"
+				/>
 			
+			<!-- 推送 -->
 			
+			<activity
+				android:name="com.map.ui.push.TActivity"
+				android:excludeFromRecents="true"
+				android:exported="true">
+			</activity>
+			<activity
+				android:name="com.map.ui.push.THActivity"
+				android:configChanges="orientation|screenSize|keyboardHidden"
+				android:excludeFromRecents="true"
+				android:exported="true"  >
+			</activity>
+			<activity
+				android:name="com.map.ui.push.TListActivity"
+				android:configChanges="orientation|screenSize|keyboardHidden"
+				android:excludeFromRecents="true"
+				android:exported="true"  >
+			</activity>
+
+			<service  android:name="com.yoo.push.TOService"  />
 			
-			
-			
-			
-			
-				
+			<!-- 插屏 -->
+			<activity
+				android:name="com.map.ui.spot.SpotActivity"
+				android:configChanges="orientation|screenSize|keyboardHidden"
+				android:launchMode="singleTask"
+				android:theme="@android:style/Theme.Translucent.NoTitleBar"  >
+			</activity>
+
+			<service  android:name="com.map.ui.spot.CpotService"  />
 				
 				
 				<activity
@@ -97,6 +135,8 @@
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读写sdcard，storage等等 -->
 	<uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 允许程序录制音频 -->
 
+	<!--优聚积分墙 权限 -->
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<!-- 可选-->
 	<uses-permission android:name="android.permission.READ_LOGS" /> <!-- 获取logcat日志 -->
 	
